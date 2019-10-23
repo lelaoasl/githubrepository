@@ -13,8 +13,8 @@ export default class Repository extends Component {
     match: PropTypes.shape({
       params: PropTypes.shape({
         repository: PropTypes.string
-      }).isRequired
-    })
+      })
+    }).isRequired
   };
 
   state = {
@@ -52,7 +52,6 @@ export default class Repository extends Component {
       return <Loading>Carregando</Loading>;
     }
 
-    console.log(issues);
     return (
       <Container>
         <Owner>
